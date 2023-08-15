@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@3.5.0",
+  "name": "watercloset",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace @wc/web build",
+    "build:components": "yarn workspace @wc/components build"
+  }
+}
